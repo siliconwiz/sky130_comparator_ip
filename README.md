@@ -10,12 +10,12 @@ A comparator can be divided into three distinctive pieces – a frontend differe
 
 ## Comparator Circuit
 Below is comparator circuit diagram used for this IP
-[](Images/CircuitDiagram.png)
+![](Images/CircuitDiagram.png)
 
 ##
 ...Work-in-progress..
 Output of first stage and the differential inputs. This out of later stages are not correct yet
-[](Images/ngspice_outdiff.png)
+![](Images/ngspice_outdiff.png)
 
 ## References
 1. P. Horowitz,and W. Hill, “The Art of Electronics,” Cambridge Press University, 3rd ed (references) 
