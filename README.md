@@ -9,7 +9,7 @@ A comparator can be divided into three distinctive pieces – a frontend differe
 
 ## Comparator Circuit
 Below is comparator circuit diagram used for this IP
-[](Images/CircuitDiagram.png)
+![](Images/CircuitDiagram.png)
 
 In the circuit above PLUs and MINUS are differential inputs.
 Ihyst is the current used to control the hysteresis.
@@ -24,23 +24,23 @@ Below are the observations
 
 ### Ihsyst = 0
 This should behave like a regular comparator that changed the output voltage VOUT eachtime PLUS crossed the MINUS
-[](Images/ngspice_zero_ihyst.png)
+![](Images/ngspice_zero_ihyst.png)
 
 ### Ihsyst = 0.5 mA
 This should have slight hysteresis
-[](Images/ngspice_0.5m_ihyst_all.png)
+![](Images/ngspice_0.5m_ihyst_all.png)
 
 A closer look at 0.9 V and 1.2 V crossing points
-[](Images/ngspice_0.5m_ihyst_closeup_0.9v.png)
-[](Images/ngspice_0.5m_ihyst_closeup_1.2v.png)
+![](Images/ngspice_0.5m_ihyst_closeup_0.9v.png)
+![](Images/ngspice_0.5m_ihyst_closeup_1.2v.png)
 
 ### Ihsyst = 2 mA
 This should have more hysteresis compared to the earlier simulations
-[](Images/ngspice_2m_ihyst_all.png)
+![](Images/ngspice_2m_ihyst_all.png)
 
 A closer look at 0.9 V and 1.2 V crossing points
-[](Images/ngspice_2m_ihyst_closeup_0.9v.png)
-[](Images/ngspice_2m_ihyst_closeup_1.2v.png)
+![](Images/ngspice_2m_ihyst_closeup_0.9v.png)
+![](Images/ngspice_2m_ihyst_closeup_1.2v.png)
 
 ### Areas of improvement
 The hysteresis at lower differential voltage is higher than the hysteresis at higher differential voltage. To get the circuit to work at wider range of voltages is difficult. 
