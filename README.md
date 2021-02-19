@@ -1,5 +1,4 @@
 # [Google Skywater 130nm](https://github.com/google/skywater-pdk) Comparator IP
-##...Work-in-progress...
 
 ## Introduction
 A comparator is a device that compares two analog inputs and outputs a digital signal indicating which input is larger. So it has two analog input terminals and one binary digital output. 
@@ -10,12 +9,42 @@ A comparator can be divided into three distinctive pieces – a frontend differe
 
 ## Comparator Circuit
 Below is comparator circuit diagram used for this IP
-![](Images/CircuitDiagram.png)
+[](Images/CircuitDiagram.png)
 
-##
-...Work-in-progress..
-Output of first stage and the differential inputs. This out of later stages are not correct yet
-![](Images/ngspice_outdiff.png)
+In the circuit above PLUs and MINUS are differential inputs.
+Ihyst is the current used to control the hysteresis.
+Vout is the output
+
+The xschem project is in Prelayout folder.
+Xschem can be set-up using [this link](https://www.youtube.com/watch?v=jXmmxO8WG8s)
+
+## Simulation
+The circuit was simulated at diffent crossing points of PLUS and MINUS voltages. i.e PLUS - MINUS = zero at three different points (0.9 V, 0.6V and 1.2V) at different Ihyst current
+Below are the observations
+
+### Ihsyst = 0
+This should behave like a regular comparator that changed the output voltage VOUT eachtime PLUS crossed the MINUS
+[](Images/ngspice_zero_ihyst.png)
+
+### Ihsyst = 0.5 mA
+This should have slight hysteresis
+[](Images/ngspice_0.5m_ihyst_all.png)
+
+A closer look at 0.9 V and 1.2 V crossing points
+[](Images/ngspice_0.5m_ihyst_closeup_0.9v.png)
+[](Images/ngspice_0.5m_ihyst_closeup_1.2v.png)
+
+### Ihsyst = 2 mA
+This should have more hysteresis compared to the earlier simulations
+[](Images/ngspice_2m_ihyst_all.png)
+
+A closer look at 0.9 V and 1.2 V crossing points
+[](Images/ngspice_2m_ihyst_closeup_0.9v.png)
+[](Images/ngspice_2m_ihyst_closeup_1.2v.png)
+
+### Areas of improvement
+The hysteresis at lower differential voltage is higher than the hysteresis at higher differential voltage. To get the circuit to work at wider range of voltages is difficult. 
+A few variations of the circuit were tried as present in the PreLayout/archive folder. 
 
 ## References
 1. P. Horowitz,and W. Hill, “The Art of Electronics,” Cambridge Press University, 3rd ed (references) 
