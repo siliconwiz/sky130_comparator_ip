@@ -33,9 +33,9 @@ N 800 -610 900 -610 {lab=#net2}
 N 800 -790 800 -780 { lab=#net1}
 N 1880 -720 1880 -520 { lab=VOUT1}
 N 2270 -680 2270 -580 { lab=VOUT2}
-N 2190 -710 2230 -710 { lab=#net3}
-N 2190 -710 2190 -550 { lab=#net3}
-N 2190 -550 2230 -550 { lab=#net3}
+N 2190 -710 2230 -710 { lab=VOUT1}
+N 2190 -710 2190 -550 { lab=VOUT1}
+N 2190 -550 2230 -550 { lab=VOUT1}
 N 2270 -900 2270 -740 { lab=VCC}
 N 2270 -520 2270 -400 { lab=GND}
 N 1880 -900 1880 -780 { lab=VCC}
@@ -49,27 +49,24 @@ N 2270 -710 2320 -710 { lab=VCC}
 N 1880 -490 1930 -490 { lab=GND}
 N 1560 -510 1610 -510 { lab=GND}
 N 1420 -670 1470 -670 { lab=GND}
-N 1630 -670 1680 -670 { lab=GND}
+N 1570 -670 1620 -670 { lab=GND}
 N 1000 -790 1000 -690 { lab=VDIFF}
 N 1370 -670 1380 -670 { lab=VOUT2}
-N 1420 -640 1420 -600 { lab=#net4}
-N 1420 -600 1680 -600 { lab=#net4}
-N 1680 -640 1680 -600 { lab=#net4}
-N 1560 -600 1560 -540 { lab=#net4}
-N 1340 -510 1520 -510 { lab=#net5}
-N 1300 -580 1380 -580 { lab=#net5}
-N 1380 -580 1380 -510 { lab=#net5}
+N 1420 -640 1420 -600 { lab=#net3}
+N 1620 -640 1620 -600 { lab=#net3}
+N 1560 -600 1560 -540 { lab=#net3}
+N 1340 -510 1520 -510 { lab=#net4}
+N 1300 -580 1380 -580 { lab=#net4}
+N 1380 -580 1380 -510 { lab=#net4}
 N 990 -490 990 -400 { lab=GND}
-N 1720 -670 1880 -670 { lab=VOUT1}
 N 1800 -490 1840 -490 { lab=VCC}
 N 1800 -900 1800 -490 { lab=VCC}
 N 1000 -820 1040 -820 { lab=VCC}
 N 750 -820 800 -820 { lab=VCC}
 N 990 -400 2500 -400 { lab=GND}
 N 1880 -620 1950 -620 { lab=VOUT1}
-N 1680 -750 1680 -700 { lab=VDIFF}
+N 1620 -750 1620 -700 { lab=VDIFF}
 N 1420 -720 1420 -700 { lab=#net1}
-N 1000 -750 1840 -750 { lab=VDIFF}
 N 800 -720 1420 -720 { lab=#net1}
 N 800 -780 840 -780 { lab=#net1}
 N 1000 -900 1000 -850 { lab=VCC}
@@ -86,7 +83,7 @@ N 660 -780 700 -780 { lab=#net1}
 N 1180 -790 1180 -750 { lab=VDIFF}
 N 800 -760 1140 -760 { lab=#net1}
 N 900 -520 950 -520 { lab=VCC}
-N 1300 -590 1300 -540 { lab=#net5}
+N 1300 -590 1300 -540 { lab=#net4}
 N 1130 -900 2260 -900 { lab=VCC}
 N 660 -900 1130 -900 { lab=VCC}
 N 660 -760 800 -760 { lab=#net1}
@@ -104,10 +101,13 @@ N 2680 -620 2680 -520 { lab=VOUT}
 N 2480 -620 2680 -620 { lab=VOUT}
 N 2400 -710 2400 -550 { lab=VOUT2}
 N 2270 -620 2400 -620 { lab=VOUT2}
-N 1950 -620 2080 -620 { lab=VOUT1}
-N 2080 -590 2120 -590 { lab=GND}
-N 2080 -560 2190 -560 { lab=#net3}
-N 2040 -940 2040 -590 { lab=EN}
+N 1710 -720 1750 -720 { lab=GND}
+N 1660 -670 1880 -670 { lab=VOUT1}
+N 1420 -600 1620 -600 { lab=#net3}
+N 1000 -750 1710 -750 { lab=VDIFF}
+N 1710 -690 1840 -750 { lab=#net5}
+N 1670 -940 1670 -720 { lab=EN}
+N 1950 -620 2190 -620 { lab=VOUT1}
 C {devices/lab_pin.sym} 830 -660 0 1 {name=p187 lab=GND}
 C {devices/lab_pin.sym} 970 -660 0 0 {name=p188 lab=GND}
 C {devices/lab_pin.sym} 1020 -520 0 1 {name=p191 lab=GND}
@@ -160,12 +160,12 @@ C {devices/lab_pin.sym} 2320 -550 0 1 {name=p4 lab=GND}
 C {devices/lab_pin.sym} 1610 -510 0 1 {name=p5 lab=GND}
 C {devices/lab_pin.sym} 1930 -490 0 1 {name=p6 lab=GND}
 C {devices/lab_pin.sym} 1470 -670 0 1 {name=p7 lab=GND}
-C {devices/lab_pin.sym} 1630 -670 0 0 {name=p8 lab=GND}
+C {devices/lab_pin.sym} 1570 -670 0 0 {name=p8 lab=GND}
 C {devices/lab_pin.sym} 1060 -400 3 0 {name=p9 lab=GND}
 C {devices/isource.sym} 1300 -620 0 0 {name=Ihyst value="pwl 0 0 20u 0 21u 0.8u 40u 0.8u 41u 0.1m 80u 0.1m"}
 C {devices/lab_pin.sym} 2330 -620 3 1 {name=p10 lab=VOUT2}
 C {devices/lab_pin.sym} 1370 -670 0 0 {name=p11 lab=VOUT2}
-C {devices/lab_pin.sym} 1650 -750 1 0 {name=p12 lab=VDIFF}
+C {devices/lab_pin.sym} 1590 -750 1 0 {name=p12 lab=VDIFF}
 C {devices/lab_pin.sym} 1950 -620 1 0 {name=p13 lab=VOUT1}
 C {devices/lab_pin.sym} 340 -920 0 0 {name=p14 lab=GND}
 C {devices/lab_pin.sym} 340 -980 0 0 {name=l1 lab=INN}
@@ -230,7 +230,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3_nvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_03v3_nvt.sym} 1700 -670 0 1 {name=M9
+C {sky130_fd_pr/nfet_03v3_nvt.sym} 1640 -670 0 1 {name=M9
 L=0.5
 W=1
 nf=1
@@ -304,7 +304,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1860 -750 0 0 {name=M10
 L=0.5
-W=2
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -372,7 +372,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3_nvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 2120 -590 0 1 {name=p20 lab=GND}
+C {devices/lab_pin.sym} 1750 -720 0 1 {name=p20 lab=GND}
 C {devices/vsource.sym} 340 -530 0 0 {name=V4 value="pwl 0 3.3 60u 3.3 61u 0 80u 0"}
 C {devices/lab_pin.sym} 340 -560 0 0 {name=p23 lab=EN}
 C {devices/lab_pin.sym} 340 -500 0 0 {name=p24 lab=GND}
@@ -381,7 +381,7 @@ value=10M
 footprint=1206
 device=resistor
 m=1}
-C {sky130_fd_pr/nfet_03v3_nvt.sym} 2060 -590 0 0 {name=M17
+C {sky130_fd_pr/nfet_03v3_nvt.sym} 1690 -720 0 0 {name=M17
 L=0.5
 W=0.42
 nf=1
@@ -458,4 +458,4 @@ sa=0 sb=0 sd=0
 model=nfet_03v3_nvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 2040 -940 0 0 {name=p33 lab=EN}
+C {devices/lab_pin.sym} 1670 -940 0 0 {name=p33 lab=EN}
