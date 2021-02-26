@@ -10,21 +10,29 @@ Below is comparator circuit diagram used for this IP
 [](Images/CircuitDiagram.png)
 
 ### Inputs to the circuit
-VCC - 3.3 v
-GND - Ground
-INN - Negative differential input
-INP - Positive differential input
-EN  - Enable pin
-Ihyst - Current to control hysteresis
+1. VCC - 3.3 v
+2. GND - Ground
+3. INN - Negative differential input
+4. INP - Positive differential input
+5. EN  - Enable pin
+6. Ihyst - Current to control hysteresis
 
 ### Output of the circuit
-VOUT - Comparator output
+1. VOUT - Comparator output
 
 ### Circuit details
 A comparator can be divided into three distinctive pieces – a frontend differential amplifier, amplifier stage and output stage.
 
-The xschem project is in Prelayout folder.
-Xschem can be set-up using [this link](https://www.youtube.com/watch?v=jXmmxO8WG8s)
+A brief literature survey is at [pdf](Docs/Low power current programmable CMOS comparator with hysteresis.pdf)
+
+This comparator consists of
+1. Frontend differential amplifier
+2. Amplifier of the output from frontend differential sage
+3. NAND gate to act as buffer as well as incorporate the enable pin
+4. Inverter to act as final buffer before output. The NAND and Inverter improves the slew and provides a little gain.
+5. Positive feedback differential set-up. 
+
+This is very similar to set-up on [2] but I have added some modifications to incorporate ENable pin and improve the performance on SKY130 PDK.
 
 ## Simulation
 The circuit was simulated at multiple currents to control hysteresis
