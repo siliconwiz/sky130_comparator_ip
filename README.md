@@ -4,16 +4,24 @@
 A comparator is a device that compares two analog inputs and outputs a digital signal indicating which input is larger. So it has two analog input terminals and one binary digital output. 
 When the difference between two analog input signals approach zero, noise on the inputs will cause spurious switching of digital output. This rapid change in output due to noise can be prevented by hysteresis. Hysteresis is switching the output high or low at different input signal levels. In place of one switching point, hysteresis introduces two: one for rising edge, and one for falling edge of voltage or current. The difference between the higher-level trip value (VH) and the lower-level trip value (VL) equals the hysteresis voltage (HYST).
 
-## Comparator Building Blocks
-A comparator can be divided into three distinctive pieces – a frontend differential amplifier, amplifier stage and output stage.
 
 ## Comparator Circuit
 Below is comparator circuit diagram used for this IP
 [](Images/CircuitDiagram.png)
 
-In the circuit above PLUs and MINUS are differential inputs.
-Ihyst is the current used to control the hysteresis.
-Vout is the output
+### Inputs to the circuit
+VCC - 3.3 v
+GND - Ground
+INN - Negative differential input
+INP - Positive differential input
+EN  - Enable pin
+Ihyst - Current to control hysteresis
+
+### Output of the circuit
+VOUT - Comparator output
+
+### Circuit details
+A comparator can be divided into three distinctive pieces – a frontend differential amplifier, amplifier stage and output stage.
 
 The xschem project is in Prelayout folder.
 Xschem can be set-up using [this link](https://www.youtube.com/watch?v=jXmmxO8WG8s)
