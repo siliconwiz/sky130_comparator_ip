@@ -73,7 +73,7 @@ XM22 VOUT2 EN VCC VCC sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 ad='int((nf+1)
 .include ../Libs/cells/nfet_03v3_nvt/sky130_fd_pr__nfet_03v3_nvt__mismatch.corner.spice
 *
 * All models
-.include ../Libs/models/all.spice
+.include ../Libs/models/all_mod.spice
 *
 
 
