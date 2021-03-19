@@ -56,6 +56,10 @@ tran 10n 100u
 # plot PLUS MINUS VDIFF V2nd VOUT
 # plot net1 net2 net3
 plot INP EN INN VOUT
+
+set wr_vecnames
+set wr_singlescale
+wrdata output.txt ihyst inp inn vout
 .endc
 
 
