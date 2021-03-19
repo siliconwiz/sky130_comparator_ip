@@ -81,6 +81,9 @@ The magic layout is as
 Below is the postlayout simulation results
 ![](Images/ngspice_postlayout_complete.png)
 
+Postlayout hysteresis at 10uA
+![](Images/hysteresis_10uA.jpg)
+
 
 ### Steps to replicate postlayout simulation
 ```
