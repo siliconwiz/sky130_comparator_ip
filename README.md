@@ -34,7 +34,7 @@ This comparator consists of
 
 This is very similar to set-up on [2] but I have added some modifications to incorporate ENable pin and improve the performance on SKY130 PDK.
 
-## Simulation
+## Prelayout Circuit Simulation
 The circuit was simulated at multiple currents to control hysteresis
 1. 0.0 uA
 2. 0.2 uA
@@ -57,7 +57,7 @@ This should have slight hysteresis. Observed VT = 18.57 mA
 This should have more hysteresis compared to the earlier simulations
 ![](Images/ngspice_prelayout_10_Ihyst.png)
 
-### Steps to replicate simulation
+### Steps to replicate prelayout simulation
 ```
 git clone https://github.com/siliconwiz/sky130_comparator_ip
 cd sky130_comparator_ip/PreLayout/Spice
@@ -69,6 +69,27 @@ Xschem can be set-up using [this link](https://www.youtube.com/watch?v=jXmmxO8WG
 
 The output should be
 ![](Images/ngspice_prelayout_complete.png)
+
+### Layout
+
+The magic layout is as 
+
+![](Images/comparator_magic.png)
+
+## Postlayout Circuit Simulation
+
+Below is the postlayout simulation results
+![](Images/ngspice_postlayout_complete.png)
+
+
+### Steps to replicate postlayout simulation
+```
+git clone https://github.com/siliconwiz/sky130_comparator_ip
+cd sky130_comparator_ip/Layout/Spice
+ngspice comparator_postlayout.spice
+```
+
+The layout should be as dipicted in previous section above.
 
 ### Areas of improvement
 The hysteresis at lower differential voltage is higher than the hysteresis at higher differential voltage.
