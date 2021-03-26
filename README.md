@@ -46,14 +46,14 @@ This should behave like a comparator with no hysteresis. The output voltage VOUT
 ![](Images/ngspice_prelayout_0_Ihyst.png)
 
 ### Ihsyst = 0.2 uA
-This should have slight hysteresis. Observed VTH = 4.29mA
+This should have slight hysteresis. Observed VTH = 1.3mV
 ![](Images/ngspice_prelayout_0.2_Ihyst.png)
 
 ### Ihsyst = 0.8 uA
-This should have slight hysteresis. Observed VT = 18.57 mA
+This should have slight hysteresis. Observed VT = 10.3 mV
 ![](Images/ngspice_prelayout_0.8_Ihyst.png)
 
-### Ihsyst = 10 uA. Observed VT = 154.29 mV
+### Ihsyst = 10 uA. Observed VT = 169.29 mV
 This should have more hysteresis compared to the earlier simulations
 ![](Images/ngspice_prelayout_10_Ihyst.png)
 
@@ -81,9 +81,17 @@ The magic layout is as
 Below is the postlayout simulation results
 ![](Images/ngspice_postlayout_complete.png)
 
-Postlayout hysteresis at 10uA
-![](Images/hysteresis_10uA.jpg)
+Postlayout hysteresis at 0uA
+![](Images/ngspice_prelayout_0_Ihyst.jpg)
 
+Postlayout hysteresis at 0.2uA
+![](Images/ngspice_prelayout_0.2_Ihyst.jpg)
+
+Postlayout hysteresis at 0.8uA
+![](Images/ngspice_prelayout_0.8_Ihyst.jpg)
+
+Postlayout hysteresis at 10uA
+![](Images/ngspice_prelayout_10_Ihyst.jpg)
 
 ### Steps to replicate postlayout simulation
 ```
