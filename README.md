@@ -82,16 +82,16 @@ Below is the postlayout simulation results
 ![](Images/ngspice_postlayout_complete.png)
 
 Postlayout hysteresis at 0uA
-![](Images/ngspice_prelayout_0_Ihyst.jpg)
+![](Images/ngspice_prelayout_0_Ihyst.png)
 
 Postlayout hysteresis at 0.2uA
-![](Images/ngspice_prelayout_0.2_Ihyst.jpg)
+![](Images/ngspice_prelayout_0.2_Ihyst.png)
 
 Postlayout hysteresis at 0.8uA
-![](Images/ngspice_prelayout_0.8_Ihyst.jpg)
+![](Images/ngspice_prelayout_0.8_Ihyst.png)
 
 Postlayout hysteresis at 10uA
-![](Images/ngspice_prelayout_10_Ihyst.jpg)
+![](Images/ngspice_prelayout_10_Ihyst.png)
 
 ### Steps to replicate postlayout simulation
 ```
